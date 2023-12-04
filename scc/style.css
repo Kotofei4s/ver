@@ -1,0 +1,607 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* dm-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/dm-sans-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* dm-sans-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/dm-sans-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+    
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.wrapper1 {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* header styles start */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 119px;
+    
+}
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 26px;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.header__item {
+    margin-right: 40px;
+    list-style-type: none;
+}
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.header__link {
+    font-size: 17px;
+    line-height: 27px;
+    color: white;
+    text-decoration: none;
+}
+
+/* header styles end */
+
+.intro{
+    background-color:rgba(25, 25, 25, 1);
+    background-size: cover;
+    padding-top: 119px;
+    display: flex;
+    
+}
+
+
+/* intro__1 styles start */
+
+
+.intro__1 { 
+    display: flex;
+    width: 1300px;
+    justify-content: space-between;
+    gap: 60px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.intro__img {
+    width: 50%;
+}
+
+.intro__text {
+    color: white;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.intro__text span {
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.luch__img {
+    position: absolute;
+    width: 68px;
+    height: 74px;
+    left: -26px;
+    top: -20px; 
+}
+.line__text {
+    width: 50%;
+    align-self: center;
+    position: relative;
+}
+.underline__img {
+    margin-top: -100px;
+}
+.logo2__img {
+    position: absolute;
+    width: 163px;
+    height: 11px;
+}
+/* intro__1 styles end */
+
+
+/* intro__2 styles start */
+
+.intro__2 {
+    background-color: rgba(25, 25, 25, 1) ;
+}
+.introo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p10 {
+    font-size: 17px;
+    width: 143px;
+    height: 27px;
+    color: white;
+}
+.fonee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 178px;
+    height: 51px;
+    background-color: rgba(17, 141, 168, 1);
+}
+.intro2__text {
+    width: 1300px;
+    height: 99px;
+    color: white;
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.blok__1 {
+    width: 1300px;
+    height: 545px;
+    background-color: black;
+    border-radius: 32px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.blok1__img {
+    width: 389px;
+    height: 465px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.blok1__text {
+    flex: box;
+    margin-top: 40px;
+    margin-right: 40px;
+    width: 778px;
+    height: 465px;
+    color: white;
+    
+}
+.stroka1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 73px;
+    height: 27px;
+    background-color: rgba(25, 25, 25, 1);
+    margin-bottom: 48px;
+}
+.stroka2 {
+    font-size: 18px;
+    width: 84px;
+    height: 27px;
+    color: rgba(17, 141, 168, 1);
+    margin-bottom: 17px;
+}
+.stroka3 {
+    height: 141px;
+    font-size: 64px;
+    margin-bottom: 28px;
+}
+.stroka4 {
+    height: 99px;
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.stroka5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 208px;
+    height: 52px;
+    font-size: 18px;
+    background-color: rgba(17, 141, 168, 1);
+    border-radius: 6px;   
+}
+.blok__2 {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    height: 512px;
+    background-color: black;
+    border-radius: 32px;
+    margin-bottom: 60px;
+   
+}
+.blok2__img {
+    width: 389px;
+    height: 432px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.stroka11 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 136px;
+    height: 27px;
+    background-color: rgba(25, 25, 25, 1);
+    margin-bottom: 48px;
+}
+.stroka21 {
+    font-size: 18px;
+    width: 83px;
+    height: 27px;
+    color: rgba(17, 141, 168, 1);
+    margin-bottom: 18px;
+}
+.stroka31 {
+    height: 141px;
+    font-size: 64px;
+    margin-bottom: 28px;
+}
+.stroka41 {
+    height: 66px;
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.stroka51 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 208px;
+    height: 52px;
+    font-size: 18px;
+    background-color: rgba(17, 141, 168, 1);
+    border-radius: 6px;   
+}
+.blok__3 {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    height: 512px;
+    background-color: black;
+    border-radius: 32px;
+    margin-bottom: 160px;
+   
+}
+.blok3__img {
+    width: 389px;
+    height: 432px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+/* intro__2 styles end */
+
+/* intro__3 styles start */
+.intro__3 {
+    background-color: rgba(25, 25, 25, 1) ;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+.blok__intro3 {
+    width: 590px;
+    height: 448px;
+    align-self: center;
+    
+}
+.intro3__text {
+    margin-bottom: 28px;
+    color: white;
+    font-size: 65px;
+    font-weight: 400; 
+}
+.fone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 112px;
+    height: 112px;
+    background-color: rgba(17, 141, 168, 1);
+    border-radius: 400px;
+    margin-bottom: 20px;
+}
+
+.text__intro {
+    font-size: 18px;
+    color: rgba(17, 141, 168, 1);
+}
+.intro3__text {
+    margin-bottom: 28px;
+    font-size: 65px;
+}
+.p1 {
+    margin-bottom: 33px;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.p2 {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.7);
+}
+/* intro__3 styles end */
+
+
+/* intro__4 styles start */
+
+.intro__4 {
+    position: relative;
+    background-color: rgba(25, 25, 25, 1) ;
+}
+.blok__4 {
+    background-color: black;
+    width: 1300px;
+    height: 387px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+.p3 {
+    margin-top: 60px;
+    margin-left: 60px;
+    font-size: 18px;
+    color: rgba(17, 141, 168, 1);
+}
+.intro4__text {
+    font-size: 72px;
+    color: white;
+}
+.form {
+    margin-top: 60px;
+    margin-right: 60px;
+}
+.input1 {
+    margin-bottom: 20px;
+    width: 522px;
+    height: 82px;
+    border-radius: 6px;
+    background-color: rgba(25, 25, 25, 1);
+    border
+}
+.input2 {
+    width: 522px;
+    height: 82px;
+    border-radius: 6px;
+    background-color: rgba(25, 25, 25, 1);
+    margin-bottom: 20px;
+}
+.button1 {
+    width: 87px;
+    height: 48px;
+    background-color: rgba(17, 141, 168, 1);
+    border-radius: 6px;
+}
+.p4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.value {
+    height: 100px;
+    width: 100px;
+}
+.luch2 {
+    position: absolute;
+    bottom: -30px;
+    left: -40px;
+    width: 147px;
+    height: 91px;
+}
+/* intro__4 styles end */
+
+
+/* intro__5 styles start */
+
+.intro__5 {
+    width: 1300px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    background-color: rgba(25, 25, 25, 1) ;
+    margin-bottom: 200px;
+}
+.blok__11 {
+    width: 423px;
+    height: 321px;
+    background-color: black;
+    border-radius: 32px;
+    margin-right: 16px;
+    
+}.blok__22 {
+    width: 423px;
+    height: 321px;
+    background-color: black;
+    border-radius: 32px;
+    margin-right: 15px;
+    
+}.blok__33 {
+    width: 423px;
+    height: 321px;
+    background-color: black;
+    border-radius: 32px;
+    
+}.blok__44 {
+    width: 423px;
+    height: 321px;
+    background-color: black;
+    border-radius: 32px;
+    margin-right: 16px;
+    
+}.blok__55 {
+    width: 423px;
+    height: 321px;
+    background-color: black;
+    border-radius: 32px;
+    margin-right: 15px;
+    
+}
+.blok__66 {
+    width: 423px;
+    height: 321px;
+    background-color: black;
+    border-radius: 32px;
+    
+}
+.zvezda {
+    margin-top: 54px;
+    margin-left: 50px;
+    margin-bottom: 21px;
+}
+.intro5__text {
+    font-size: 36px;
+    color: white;
+    margin-left: 50px;
+}
+.podtext{
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 19px;
+}
+
+/* intro__5 styles end */
+
+/* footer styles start */
+footer {
+    font-family: 'DM Sans';
+    font-style: normal;
+    background-color: rgba(25, 25, 25, 1) ;
+}
+.niz {
+    display: flex;
+    width: 1400px;
+    height: 238px;
+}
+.levo__niz {
+    width: 447px;
+    height: 222px;
+}
+.logo4 {
+    width: 223px;
+    height: 46px;
+    margin-bottom: 19px;
+}
+.kar1 {
+    margin-right: 10px;
+}
+.kar2 {
+    margin-right: 10px;
+}
+.levo__nizz {
+    display: flexbox;
+    width: 178px;
+    height: 222px;
+}
+.p6 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+.pravo__verhh {
+    display: flexbox;
+    width: 178px;
+    height: 222px;
+    margin-right: 16px;
+}
+.pravo__verh {
+    display: flex;
+    width: 447px;
+    height: 32px;
+}
+.im1 {
+    margin-right: 17px;
+}
+
+
+
+/* footer styles end */
